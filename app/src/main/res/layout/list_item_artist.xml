@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:background="?attr/selectableItemBackground"
+              tools:layout_width="match_parent"
+              tools:layout_height="@dimen/tile_height"
+              android:orientation="horizontal"
+              style="@style/app.list.item.container" >
+
+    <ImageView
+        android:id="@+id/img_artist_icon"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="@dimen/text_padding"
+        android:layout_marginRight="@dimen/text_padding"
+        android:layout_gravity="center_vertical"
+        tools:layout_width="@dimen/tile_height"
+        tools:layout_height="@dimen/tile_height"
+        tools:scaleType="centerCrop"
+        style="@style/app.list.item.icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_artist_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/text_padding"
+        android:layout_marginEnd="@dimen/text_padding"
+        android:layout_gravity="center_vertical"
+        tools:text="Coldplay"
+        style="@style/app.list.item.title"
+        />
+</LinearLayout>

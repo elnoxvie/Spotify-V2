@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:key="@string/pref_key_clear_history" android:title="@string/clear_search_history"/>
+
+    <ListPreference android:key="@string/pref_key_spotify_market"
+                    android:title="@string/spotify_market"
+                    android:defaultValue="@string/default_spotify_market"
+                    android:entries="@array/spotify_market"
+                    android:entryValues="@array/spotify_market"/>
+
+    <SwitchPreference android:key="@string/pref_key_enable_notification"
+                      android:title="@string/enable_notification"
+                      android:defaultValue="true"/>
+
+    <SwitchPreference android:key="@string/pref_key_enable_now_playing"
+                      android:title="@string/enable_now_playing"
+                      android:defaultValue="true"/>
+
+</PreferenceScreen>

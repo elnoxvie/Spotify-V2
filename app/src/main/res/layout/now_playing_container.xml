@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/controls_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    custom:cardUseCompatPadding="true"
+    custom:cardBackgroundColor="@color/color_primary"
+    custom:cardElevation="4sp" >
+
+    <fragment android:name="com.elnware.spotifystreamer.fragment.NowPlayingInfoFragment"
+              android:id="@+id/fragment_playback_controls"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:layout="@layout/fragment_now_playing" />
+
+</android.support.v7.widget.CardView>

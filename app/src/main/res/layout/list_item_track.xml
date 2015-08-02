@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="horizontal"
+                style="@style/app.list.item.container" >
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_centerVertical="true"
+        style="@style/app.list.item.position"
+        tools:text="1"
+        />
+
+    <ImageView
+        android:id="@+id/img_track_thumbnail"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_position"
+        android:layout_marginRight="@dimen/text_padding"
+        tools:layout_width="@dimen/artist_image_size"
+        tools:layout_height="@dimen/artist_image_size"
+        tools:scaleType="fitCenter"
+        tools:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription"
+        style="@style/app.list.item.icon"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/text_padding"
+        android:layout_marginEnd="@dimen/text_padding"
+        android:layout_toRightOf="@id/img_track_thumbnail"
+        android:layout_toEndOf="@id/img_track_thumbnail"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_track_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/app.list.item.title"
+            tools:text="The Scientist" />
+
+        <TextView
+            android:id="@+id/tv_album_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/app.list.item.subTitle"
+            tools:text="A Rush Of Blood To The Head" />
+
+    </LinearLayout>
+</RelativeLayout>

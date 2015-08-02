@@ -1,0 +1,64 @@
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseTheme"/>
+
+    <style name="app"/>
+
+    <style name="app.header"/>
+
+    <style name="app.header.text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tile_height</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/large_padding</item>
+        <item name="android:paddingRight">@dimen/large_padding</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="app.list"/>
+
+    <style name="app.list.item"/>
+
+    <style name="app.list.item.container">
+        <item name="android:background">@drawable/item_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tile_height</item>
+    </style>
+
+    <style name="app.list.item.icon">
+        <item name="android:layout_width">@dimen/artist_image_size</item>
+        <item name="android:layout_height">@dimen/artist_image_size</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="app.list.item.title">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="app.list.item.position">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_width">@dimen/tile_height</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="app.list.item.subTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+</resources>

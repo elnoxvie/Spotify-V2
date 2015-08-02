@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/now_playing_container"
+                android:orientation="horizontal"
+                android:background="?selectableItemBackground"
+                android:layout_height="56dp"
+                android:layout_width="match_parent" >
+
+    <ImageView
+        android:id="@+id/img_track_thumbnail"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/text_padding"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        tools:layout_width="56dp"
+        tools:layout_height="56dp"
+        tools:scaleType="fitCenter"
+        tools:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription"
+        />
+
+    <LinearLayout
+        android:id="@+id/track_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/text_padding"
+        android:layout_marginEnd="@dimen/text_padding"
+        android:layout_toRightOf="@id/img_track_thumbnail"
+        android:layout_toEndOf="@id/img_track_thumbnail"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_track_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/app.list.item.title"
+            tools:text="The Scientist" />
+
+        <TextView
+            android:id="@+id/tv_album_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/app.list.item.subTitle"
+            tools:text="A Rush Of Blood To The Head" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_or_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/text_padding"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_play_arrow_48dp"/>
+
+</LinearLayout>
